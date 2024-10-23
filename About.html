@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+</head>
+<body>
+    <!-----------------header----------------->
+    <header class="header">
+        <a href="#"><img src="./Images/logo.png" alt="logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+                <li> <a href="Index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="portfolio.html">Portfolio</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+  <!---------------Sub-header section--------------->
+  <section class="sub-header" id="sub-header">
+    <h1> About <span> Me</span></h1>
+  </section>
+    <!-----------------About section----------------------->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="./Images/Ayes.png" alt="">
+    </div>
+    <div class="about-text">
+        <h4> <span>I'm a </span>Design Technologist</h4>
+        <p> I'm a Muslimah, a Medical Aspirant, and a tech enthusiast. I design and build innovative digital products, experiences, and services that merge creativity, technology, and user-centricity. With a passion for problem-solving and a knack for coding, I bridge the gap between design and technology. </p>
+        <a href="" class="btn"> Let's Talk</a>
+    </div>
+</section>
+<section class="others" id="others">
+    <div class="sub-text-title">
+    <h2> Why <span> Me?</span></h2>
+    </div>
+    <div class="others-img">
+        <img src="./Images/logo.png" alt="">
+        <span class="circle-spin"></span>
+    </div>
+    <div class="others-text">
+        <h3> <span>As</span> a Design Technologist & Web Trainer</h3>
+        <p> 
+- I bring a perspective to my work, combining technical expertise with creative vision. <br><br>
+- I understand that each person and each project is unique and I tailor my approach to meet individual needs. <br><br>
+- I help people achieve their full potential and make their dreams a reality.
+
+        </p>
+    </div>
+    <div>
+        <a href="" class="btn"> Hire Me</a> 
+    </div>
+</section>
+<!--------------footer--------------->
+<footer class="footer">
+    <div class="attribution">
+        <p>Design with <i class='bx bx-heart'></i> By Aisha</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<!-------------JS for toggle menu----------->
+<script>
+    var navMenu = document.getElementById("navMenu");
+    function openMenu() {
+        navMenu.style.right = "0"
+    }
+    function closeMenu() {
+        navMenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>

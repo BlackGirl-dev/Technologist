@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+</head>
+<body>
+    <!-----------------header----------------->
+    <header class="header">
+        <a href="#"><img src="./Images/logo.png" alt="logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+                <li> <a href="Index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="services.html">Services</a></li>
+                <li> <a href="portfolio.html">Portfolio</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+  <!---------------Sub-header section--------------->
+  <section class="sub-header" id="sub-header">
+    <h1> Contact <span>Me!</span></h1>
+  </section>
+    <!--------------------contact session-------------->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7928.1898130079435!2d3.343941250000001!3d6.509670150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x103b8c2520ab9b83%3A0xedb2a6439ae4061e!2sAdebisi%20Street!3m2!1d6.5113286!2d3.3480868999999998!4m0!5e0!3m2!1sen!2sng!4v1725940553512!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2> Contact <span>Me!</span></h2>
+         <h4 class="dot"> Whatever your project may be...</h4>
+        <p>As a design technologist. I'm skilled in the latest design and development techniques, and I have a passion for creating unique and effect user experiences.Let's talk about your specific needs and see how I can help.</p>
+         <div class="list">
+            <li> <a href="#">+2349078166013</a></li>
+            <li> <a href="#"> aminullahiaishah@gmail.com</a></li>
+            <li> <a href="#">Like, Share & Subscribe</a></li>
+         </div>
+         <div class="icon">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i> </a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i> </a>
+            <a href="#"><i class='bx bxl-youtube'></i> </a>
+         </div>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <input type="name" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="number" placeholder="Your mobile Number" required>
+            <textarea name="" id="" cols="35" rows="10"  placeholder="How Can I Help You?"></textarea>
+            <input type="submit" value="Send Message" class="submit">
+        </form>
+    </div>
+</section>
+<!--------------footer--------------->
+<footer class="footer">
+    <div class="attribution">
+        <p>Design with <i class='bx bx-heart'></i> By Aisha</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<!-------------JS for toggle menu----------->
+<script>
+    var navMenu = document.getElementById("navMenu");
+    function openMenu() {
+        navMenu.style.right = "0"
+    }
+    function closeMenu() {
+        navMenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
